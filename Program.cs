@@ -1,4 +1,8 @@
-﻿using System;
+﻿// By:   Stef van Stipdonk
+// Date: 12-11-2019
+// Time: 15 min
+
+using System;
 
 namespace Coin_change
 {
