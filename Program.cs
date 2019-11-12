@@ -72,8 +72,12 @@ namespace Coin_change
             double enterAmount = Convert.ToDouble(Console.ReadLine());
             double toChange = enterAmount;
             double amountLeft = 0.0;
-            int[] coins = new int[4];
+            int[] coins = new int[7];
             ChangeCalc(enterAmount, amountLeft, coins);
+
+            Console.WriteLine("Amount to change: " + toChange);
+            Console.WriteLine("The change is: ");
+            DisplayChange(coins);
         }
     }
 }
