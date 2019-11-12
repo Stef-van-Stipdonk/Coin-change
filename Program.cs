@@ -24,10 +24,10 @@ namespace Coin_change
                 amountLeft = enterAmount % 0.50;
                 enterAmount = amountLeft;
             }
-            if ((enterAmount % 0.25) < enterAmount)
+            if ((enterAmount % 0.2) < enterAmount)
             {
-                coins[3] = (int)(enterAmount / 0.25);
-                amountLeft = enterAmount % 0.25;
+                coins[3] = (int)(enterAmount / 0.2);
+                amountLeft = enterAmount % 0.2;
                 enterAmount = amountLeft;
             }
             if ((enterAmount % 0.1) < enterAmount)
@@ -50,7 +50,20 @@ namespace Coin_change
         }
         static void DisplayChange(int[] arr)
         {
-
+            if (arr[6] > 0)
+                Console.WriteLine("Number of 2 euro coins: " + arr[6]);
+            if (arr[5] > 0)
+                Console.WriteLine("Number of 1 euro coins: " + arr[5]);
+            if (arr[4] > 0)
+                Console.WriteLine("Number of 50 cent coins: " + arr[4]);
+            if (arr[3] > 0)
+                Console.WriteLine("Number of 20 cent coins: " + arr[3]);
+            if (arr[2] > 0)
+                Console.WriteLine("Number of 10 cent coins: " + arr[2]);
+            if (arr[1] > 0)
+                Console.WriteLine("Number of 5 cent coins: " + arr[1]);
+            if (arr[0] > 0)
+                Console.WriteLine("Number of 1 cent coins: " + arr[0]);
         }
 
         static void Main(string[] args)
