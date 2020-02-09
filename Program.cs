@@ -10,6 +10,36 @@ namespace Coin_change
     {
         static void ChangeCalc(double enterAmount, double amountLeft, int[] coins)
         {
+            if ((enterAmount % 100) < enterAmount)
+            {
+                coins[11] = (int)(enterAmount / 100);
+                amountLeft = enterAmount % 100;
+                enterAmount = amountLeft;
+            }
+            if ((enterAmount % 50) < enterAmount)
+            {
+                coins[10] = (int)(enterAmount / 50);
+                amountLeft = enterAmount % 50;
+                enterAmount = amountLeft;
+            }
+            if ((enterAmount % 20) < enterAmount)
+            {
+                coins[9] = (int)(enterAmount / 20);
+                amountLeft = enterAmount % 20;
+                enterAmount = amountLeft;
+            }
+            if ((enterAmount % 10) < enterAmount)
+            {
+                coins[8] = (int)(enterAmount / 10);
+                amountLeft = enterAmount % 10;
+                enterAmount = amountLeft;
+            }
+            if ((enterAmount % 5) < enterAmount)
+            {
+                coins[7] = (int)(enterAmount / 5);
+                amountLeft = enterAmount % 5;
+                enterAmount = amountLeft;
+            }
             if ((enterAmount % 2) < enterAmount)
             {
                 coins[6] = (int)(enterAmount / 2);
@@ -48,12 +78,23 @@ namespace Coin_change
             }
             if ((enterAmount % 0.01) < enterAmount)
             {
-                coins[1] = (int)(enterAmount / 0.01);
+                coins[0] = (int)(enterAmount / 0.01 + 1);
                 amountLeft = enterAmount % 0.01;
+                enterAmount = amountLeft;
             }
         }
         static void DisplayChange(int[] arr)
         {
+            if (arr[11] > 0)
+                Console.WriteLine("Number of 100 euro bills: " + arr[11]);
+            if (arr[10] > 0)
+                Console.WriteLine("Number of 50 euro bills: " + arr[10]);
+            if (arr[9] > 0)
+                Console.WriteLine("Number of 20 euro bills: " + arr[9]);
+            if (arr[8] > 0)
+                Console.WriteLine("Number of 10 euro bills: " + arr[8]);
+            if (arr[7] > 0)
+                Console.WriteLine("Number of 5 euro bills: " + arr[7]);
             if (arr[6] > 0)
                 Console.WriteLine("Number of 2 euro coins: " + arr[6]);
             if (arr[5] > 0)
@@ -76,7 +117,7 @@ namespace Coin_change
             double enterAmount = Convert.ToDouble(Console.ReadLine());
             double toChange = enterAmount;
             double amountLeft = 0.0;
-            int[] coins = new int[7];
+            int[] coins = new int[12];
             ChangeCalc(enterAmount, amountLeft, coins);
 
             Console.WriteLine("Amount to change: " + toChange);

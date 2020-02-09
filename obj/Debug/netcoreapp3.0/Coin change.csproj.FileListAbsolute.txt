@@ -9,3 +9,14 @@ C:\my files\School-coding\Coding\Coin change\obj\Debug\netcoreapp3.0\Coin change
 C:\my files\School-coding\Coding\Coin change\obj\Debug\netcoreapp3.0\Coin change.AssemblyInfo.cs
 C:\my files\School-coding\Coding\Coin change\obj\Debug\netcoreapp3.0\Coin change.dll
 C:\my files\School-coding\Coding\Coin change\obj\Debug\netcoreapp3.0\Coin change.pdb
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\obj\Debug\netcoreapp3.0\Coin change.dll
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\obj\Debug\netcoreapp3.0\Coin change.pdb
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\bin\Debug\netcoreapp3.0\Coin change.exe
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\bin\Debug\netcoreapp3.0\Coin change.deps.json
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\bin\Debug\netcoreapp3.0\Coin change.runtimeconfig.json
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\bin\Debug\netcoreapp3.0\Coin change.runtimeconfig.dev.json
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\bin\Debug\netcoreapp3.0\Coin change.dll
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\bin\Debug\netcoreapp3.0\Coin change.pdb
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\obj\Debug\netcoreapp3.0\Coin change.csprojAssemblyReference.cache
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\obj\Debug\netcoreapp3.0\Coin change.AssemblyInfoInputs.cache
+C:\Users\stefv\Documents\myFiles\School-coding\Coding\Coin change\obj\Debug\netcoreapp3.0\Coin change.AssemblyInfo.cs
